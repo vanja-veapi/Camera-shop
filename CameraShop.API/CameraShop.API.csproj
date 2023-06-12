@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CameraShop.Application\CameraShop.Application.csproj" />
+    <ProjectReference Include="..\CameraShop.Domain\CameraShop.Domain.csproj" />
+    <ProjectReference Include="..\CameraShop.EfDataAccess\CameraShop.EfDataAccess.csproj" />
+    <ProjectReference Include="..\CameraShop.Implementation\CameraShop.Implementation.csproj" />
+  </ItemGroup>
+
+</Project>

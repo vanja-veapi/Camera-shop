@@ -1,6 +1,6 @@
 ﻿using CameraShop.Domain;
 
-namespace CameraShop.Implementation.Logging
+namespace CameraShop.Application.Logging
 {
     public interface IUseCaseLogger
     {

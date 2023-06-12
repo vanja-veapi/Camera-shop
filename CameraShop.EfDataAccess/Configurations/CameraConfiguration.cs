@@ -64,15 +64,6 @@ namespace CameraShop.EfDataAccess.Configurations
                 .WithOne(oi => oi.Camera)
                 .HasForeignKey(oi => oi.CameraId);
 
-            builder.HasOne(c => c.Stock)
-                .WithOne(s => s.Camera)
-                .HasForeignKey<Stock>(s => s.CameraId);
-
-            builder.HasMany(x => x.Discounts)
-                .WithOne(d => d.Camera)
-                .HasForeignKey(d => d.CameraId)
-                .OnDelete(DeleteBehavior.Restrict);
-
         }
     }
 }

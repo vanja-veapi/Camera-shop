@@ -4,6 +4,7 @@ using CameraShop.EfDataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CameraShop.EfDataAccess.Migrations
 {
     [DbContext(typeof(CameraShopDbContext))]
-    partial class CameraShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230612192537_repair of database")]
+    partial class repairofdatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

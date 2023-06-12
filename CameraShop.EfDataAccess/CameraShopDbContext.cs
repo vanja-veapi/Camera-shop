@@ -58,13 +58,11 @@ namespace CameraShop.EfDataAccess
         public DbSet<CameraImage> CameraImages { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
-        public DbSet<Discount> Discounts { get; set; }
         public DbSet<ExceptionLog> ExceptionLogs { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<SensorType> SensorTypes { get; set; }
-        public DbSet<Stock> Stocks { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UseCase> UseCases { get; set; }
         public DbSet<UserUseCase> UserUseCases { get; set; }

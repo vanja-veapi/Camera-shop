@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CameraShop.Application.Logging;
+using CameraShop.Domain;
+using CameraShop.EfDataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +11,7 @@ namespace CameraShop.Implementation.Logging
 {
     public class EfExceptionlogger : EfImplementation, IExceptionLogger
     {
-        public EfExceptionlogger(LinkedUpContext context) : base(context)
+        public EfExceptionlogger(CameraShopDbContext context) : base(context)
         {
         }
 
@@ -24,7 +27,7 @@ namespace CameraShop.Implementation.Logging
     }
     public class EfUseCaseLogger : EfImplementation, IUseCaseLogger
     {
-        public EfUseCaseLogger(LinkedUpContext context) : base(context)
+        public EfUseCaseLogger(CameraShopDbContext context) : base(context)
         {
         }
 
