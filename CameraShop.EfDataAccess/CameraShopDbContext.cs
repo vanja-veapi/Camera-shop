@@ -11,6 +11,14 @@ namespace CameraShop.EfDataAccess
     public class CameraShopDbContext : DbContext
     {
         //public IApplicationUser User { get; }
+        public CameraShopDbContext()
+        {
+
+        }
+        public CameraShopDbContext(DbContextOptions opt) : base(opt)
+        {
+            Database.EnsureCreated();
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-AUKHI58;Initial Catalog=CameraShop;Integrated Security=True");

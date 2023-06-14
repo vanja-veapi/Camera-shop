@@ -15,9 +15,6 @@ namespace CameraShop.EfDataAccess.Configurations
             builder.Property(x => x.ProductDescription)
                 .IsRequired(false);
 
-            builder.Property(x => x.IsOnDiscount)
-                .IsRequired();
-
             builder.Property(x => x.Megapixels)
                 .IsRequired();
 

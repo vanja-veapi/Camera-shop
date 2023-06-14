@@ -4,7 +4,6 @@
     {
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
-        public bool IsOnDiscount { get; set; }
         public int BrandId { get; set; }
         public int SensorTypeId { get; set; }
         public double Megapixels { get; set; }

@@ -25,8 +25,7 @@ namespace CameraShop.EfDataAccess.Configurations
                 .HasMaxLength(50);
 
             builder.Property(u => u.Password)
-                .IsRequired()
-                .HasMaxLength(50);
+                .IsRequired();
 
             builder.HasIndex(u => u.Email)
                 .IsUnique();
